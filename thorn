@@ -1,3 +1,9 @@
+KEY = "PuR-CKJK--44-KgceCNO-2-4s2KrCevvn"
+
+local keys = {
+   ["PuR-CKJK--44-KgceCNO-2-4s2KrCevv"] = true,
+}
+if keys[KEY] then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/mikeyyyyyy/texas/main/support"))()
 wait(1.5)
 writefile("michaelhook loader.lua", "S29FgKBhfkTY8WxBK4nJkQgkbTWyDbSDUGjPbyXipNDzAfyamKF4qRGNiixtV8qSzP5F")
@@ -322,3 +328,6 @@ Toggle3:CreateKeybind(tostring(Config.Keybind):gsub("Enum.KeyCode.", ""), functi
 	Config.Keybind = Enum.KeyCode[Key]
 end)
 Toggle3:SetState(true)
+else
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "MICHAELHOOK"; Text = "KEY Error, re-check."; Duration = 9e9; Button1 = "ok"})
+end
